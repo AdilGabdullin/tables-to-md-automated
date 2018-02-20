@@ -18,13 +18,13 @@ function generateTable($fileName, $columnsNum)
 $result = '';
 $result .= '# Metric descriptions for Workplace Analytics' . PHP_EOL;
 $result .= '## Person metrics' . PHP_EOL;
-$result .= generateTable('person metrics.txt', 3);
+$result .= generateTable('input/person metrics.txt', 3);
 $result .= '## Meeting metrics'. PHP_EOL;
-$result .= generateTable('meeting metrics.txt', 3);
+$result .= generateTable('input/meeting metrics.txt', 3);
 $result .= '## Group metrics'. PHP_EOL;
-$result .= generateTable('group metrics.txt', 3);
+$result .= generateTable('input/group metrics.txt', 3);
 $result .= '# Glossary for Workplace Analytics'. PHP_EOL;
-$result .= generateTable('Glossary for Workplace Analytics.txt', 2);
+$result .= generateTable('input/Glossary for Workplace Analytics.txt', 2);
 
 echo $result;
 file_put_contents('Metric descriptions and glossary.md', $result);
