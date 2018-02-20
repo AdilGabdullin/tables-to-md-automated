@@ -15,8 +15,7 @@ function generateTable($fileName, $columnsNum)
     return $t->render() . PHP_EOL;
 }
 
-$result = '';
-$result .= '# Metric descriptions for Workplace Analytics' . PHP_EOL;
+$result = '# Metric descriptions for Workplace Analytics' . PHP_EOL;
 $result .= '## Person metrics' . PHP_EOL;
 $result .= generateTable('input/person metrics.txt', 3);
 $result .= '## Meeting metrics'. PHP_EOL;
